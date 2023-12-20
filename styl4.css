@@ -1,0 +1,165 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;  
+}
+.div1{
+    display: flex;  
+    flex-wrap: nowrap;
+    justify-content: center;  
+    border: 1px solid black; 
+}
+.div2{
+    flex-grow: 1;  
+    flex-basis: 300px; 
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-around; 
+    width: 50%;
+}
+.div{
+    display: flex;
+    gap: 5px;
+}
+.form{
+    background-color: rgb(31, 30, 30); 
+    padding: 40px;
+} 
+img{ 
+    width: 100%;
+    height: 581px; 
+    display: flex;
+    flex-direction: row; 
+} 
+input{
+    padding: 5px;
+    width: 85%; 
+    background-color:rgb(31, 30, 30); 
+}  
+.div input{
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black; 
+    font-weight: bolder;
+}
+ 
+.quatre input{
+    background-color: black;
+    color: white; 
+    margin-left: 2px;
+    padding-top: 3px;
+} 
+.quatre{
+    background-color: #D1A97E;
+    width: 120px;
+    padding: 3px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.quatre p{ 
+    color: black;
+    font-weight: bold; 
+}
+h1{
+    font-size: 1.2em;
+    color: white;
+    text-align: start;
+}
+h2{
+    font-size: 1em;
+    color: white;
+    text-align: start;
+} 
+p{
+    color: #D1A97E;
+    font-size: 0.7em;
+} 
+.haut input{
+    border: none;
+    color: white;
+} 
+.bouton input{
+    background-color:#D1A97E ;
+    border: 1px solid #D1A97E;
+    width: 100px;
+    height: 40px; 
+} 
+.bouton{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+} 
+input:focus{
+    outline: none;
+}
+.haut input{
+    border-bottom:1px solid white; 
+} 
+.text input{
+    border-bottom: 1px solid #D1A97E;
+}
+.text label{
+    color: #D1A97E;
+}
+@media screen and (max-width:560px){
+    .section{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    .div1{
+        display: flex;  
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    .haut{
+        margin-left: 10%;
+    } 
+    input{ 
+        width: 80%;  
+    }  
+    h1{
+        font-size: 1em; 
+    }
+    .div input{
+        width: 25px;
+        border-radius: 15px; 
+    }
+    .quatre{ 
+        width: 100px; 
+        gap: 10px;
+    }
+    h1,h2{
+        text-align: center;
+    }
+    .bouton{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
+    .div{
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+    }
+    p{
+         text-align: center;
+    } 
+}
+@media screen and (max-width:768px){
+    h1{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 0.7em;
+    } 
+    img{
+        height: 557px;
+    }
+}
